@@ -290,7 +290,7 @@ fn overlap(s: &str, t: &str) -> &str;
 fn overlap<'a>(s: &'a str, t: &str) -> &'a str; // 返り値はsより長持ちしない
 fn overlap<'a>(s: &str, t: &'a str) -> &'a str; // 返り値はtより長持ちしない
 fn overlap<'a>(s: &'a str, t: &'a str) -> &'a str; // 返り値はsとtより長持ちしない
-fn overlap(s: &str, t: &str) -> &'static str; // // 返り値はsとtより長持ちしない
+fn overlap(s: &str, t: &str) -> &'static str; // 返り値はsとtより長持ちする
 fn overlap<'a>(s: &str, t: &str) -> &'a str; // 引数と返り値のライフタイムとは関係ない
 
 // 元々の記法
